@@ -1,0 +1,359 @@
+$(sr_DEPS	Makefile	/^$(sr_DEPS) : .%.d : %.c$/
+$(sr_OBJS	Makefile	/^$(sr_OBJS) : %.o : %.c$/
+.PHONY	Makefile	/^.PHONY : clean clean-deps dist    $/
+ARCH	Makefile	/^ARCH = -D_CYGWIN_$/
+ARCH	Makefile	/^ARCH = -D_LINUX_$/
+ARCH	Makefile	/^ARCH =  -D_SOLARIS_$/
+ARCH	Makefile	/^ARCH = -D_DARWIN_$/
+AUTH_KEY_LEN	sr_vns_comm.c	254
+CC	Makefile	/^CC = gcc$/
+CFLAGS	Makefile	/^CFLAGS = -g -Wall -ansi -D_DEBUG_ -D_GNU_SOURCE $(/
+Computed	sha1.h	41
+Corrupted	sha1.h	42
+DEFAULT_HOST	sr_main.c	43
+DEFAULT_PORT	sr_main.c	42
+DEFAULT_RTABLE	sr_main.c	45
+DEFAULT_SERVER	sr_main.c	44
+DEFAULT_TOPO	sr_main.c	46
+Debug	sr_router.h	/^#define Debug(x, args...) printf(x, ## args)$/
+Debug	sr_router.h	/^#define Debug(x, args...) do{}while(0)$/
+DebugMAC	sr_router.h	/^#define DebugMAC(x) \\$/
+DebugMAC	sr_router.h	/^#define DebugMAC(x) do{}while(0)$/
+ETHER_ADDR_LEN	sr_protocol.h	143
+HWETHER	vnscommand.h	121
+HWETHIP	vnscommand.h	122
+HWFIXEDIP	vnscommand.h	120
+HWINTERFACE	vnscommand.h	116
+HWINUSE	vnscommand.h	119
+HWMASK	vnscommand.h	123
+HWSPEED	vnscommand.h	117
+HWSUBNET	vnscommand.h	118
+ICMP_DATA_SIZE	sr_protocol.h	77
+IDSIZE	vnscommand.h	21
+INIT_TTL	sr_router.h	30
+IP_DF	sr_protocol.h	126
+IP_MAXPACKET	sr_protocol.h	45
+IP_MF	sr_protocol.h	127
+IP_OFFMASK	sr_protocol.h	128
+IP_RF	sr_protocol.h	125
+LIBS	Makefile	/^LIBS= $(SOCK) -lm -lpthread$/
+LINKTYPE_ETHERNET	sr_dumper.h	24
+Length_High	sha1.h	36
+Length_Low	sha1.h	35
+MAXHWENTRIES	vnscommand.h	133
+Message_Block	sha1.h	38
+Message_Block_Index	sha1.h	39
+Message_Digest	sha1.h	33
+Msr_main	sr_main.c	/^int main(int argc, char **argv)$/
+OSTYPE	Makefile	/^OSTYPE = $(shell uname)$/
+PACKET_DUMP_SIZE	sr_router.h	31
+PCAP_ETHA_LEN	sr_dumper.h	19
+PCAP_PROTO_LEN	sr_dumper.h	20
+PCAP_VERSION_MAJOR	sr_dumper.h	17
+PCAP_VERSION_MINOR	sr_dumper.h	18
+PFLAGS	Makefile	/^PFLAGS= -follow-child-processes=yes -cache-dir=\/tm/
+PURIFY	Makefile	/^PURIFY= purify ${PFLAGS}$/
+SHA1CircularShift	sha1.c	/^#define SHA1CircularShift(bits,word) \\$/
+SHA1Context	sha1.h	31
+SHA1Context	sha1.h	43
+SHA1Input	sha1.c	/^void SHA1Input(     SHA1Context         *context,$/
+SHA1PadMessage	sha1.c	/^void SHA1PadMessage(SHA1Context *context)$/
+SHA1ProcessMessageBlock	sha1.c	/^void SHA1ProcessMessageBlock(SHA1Context *context)/
+SHA1Reset	sha1.c	/^void SHA1Reset(SHA1Context *context)$/
+SHA1Result	sha1.c	/^int SHA1Result(SHA1Context *context)$/
+SHA1_LEN	sr_vns_comm.c	255
+SOCK	Makefile	/^SOCK = -lnsl -lresolv$/
+SOCK	Makefile	/^SOCK = -lnsl -lsocket -lresolv$/
+SOCK	Makefile	/^SOCK = -lresolv$/
+SR_ARPCACHE_H	sr_arpcache.h	67
+SR_ARPCACHE_SZ	sr_arpcache.h	74
+SR_ARPCACHE_TO	sr_arpcache.h	75
+SR_PROTOCOL_H	sr_protocol.h	34
+SR_ROUTER_H	sr_router.h	10
+SR_UTILS_H	sr_utils.h	29
+TCPDUMP_MAGIC	sr_dumper.h	22
+VERSION_INFO	sr_main.c	41
+VNSBANNER	vnscommand.h	18
+VNSCLOSE	vnscommand.h	16
+VNSHWINFO	vnscommand.h	19
+VNSOPEN	vnscommand.h	15
+VNSPACKET	vnscommand.h	17
+VNS_AUTH_REPLY	vnscommand.h	143
+VNS_AUTH_REQUEST	vnscommand.h	142
+VNS_AUTH_STATUS	vnscommand.h	144
+VNS_OPEN_TEMPLATE	vnscommand.h	141
+VNS_RTABLE	vnscommand.h	140
+_SHA1_H_	sha1.h	25
+__BIG_ENDIAN	sr_protocol.h	60
+__BYTE_ORDER	sr_protocol.h	65
+__BYTE_ORDER	sr_protocol.h	68
+__BYTE_ORDER	sr_protocol.h	71
+__BYTE_ORDER	sr_protocol.h	74
+__EXTENSIONS__	sr_main.c	17
+__LITTLE_ENDIAN	sr_protocol.h	56
+__USE_MISC	sr_rt.c	19
+__VNSCOMMAND_H	vnscommand.h	13
+added	sr_arpcache.h	87
+addr	sr_if.h	41
+all	Makefile	/^all : sr$/
+ar_hln	sr_protocol.h	177
+ar_hrd	sr_protocol.h	175
+ar_op	sr_protocol.h	179
+ar_pln	sr_protocol.h	178
+ar_pro	sr_protocol.h	176
+ar_sha	sr_protocol.h	180
+ar_sip	sr_protocol.h	181
+ar_tha	sr_protocol.h	182
+ar_tip	sr_protocol.h	183
+arp_hrd_ethernet	sr_protocol.h	169
+arp_op_reply	sr_protocol.h	165
+arp_op_request	sr_protocol.h	164
+attr	sr_arpcache.h	106
+attr	sr_router.h	55
+auth_ok	vnscommand.h	194
+buf	sr_arpcache.h	78
+c_auth_reply	vnscommand.h	187
+c_auth_request	vnscommand.h	177
+c_auth_status	vnscommand.h	197
+c_banner	vnscommand.h	87
+c_base	vnscommand.h	31
+c_close	vnscommand.h	62
+c_hw_entry	vnscommand.h	129
+c_hwinfo	vnscommand.h	137
+c_hwrequest	vnscommand.h	74
+c_open	vnscommand.h	49
+c_open_template	vnscommand.h	168
+c_packet_ethernet_header	vnscommand.h	103
+c_packet_header	vnscommand.h	110
+c_rtable	vnscommand.h	153
+c_src_filter	vnscommand.h	159
+cache	sr_router.h	54
+caplen	sr_dumper.h	42
+caplen	sr_dumper.h	62
+char	sr_router.h	49
+cksum	sr_utils.c	/^uint16_t cksum (const void *_data, int len) {$/
+clean	Makefile	/^clean:$/
+clean-deps	Makefile	/^clean-deps:$/
+data	sr_protocol.h	99
+dest	sr_rt.h	32
+dist	Makefile	/^dist: dist-clean $/
+dist-clean	Makefile	/^dist-clean: clean clean-deps$/
+entries	sr_arpcache.h	103
+ether_dhost	sr_protocol.h	145
+ether_dhost	vnscommand.h	99
+ether_shost	sr_protocol.h	146
+ether_shost	vnscommand.h	100
+ether_type	sr_protocol.h	147
+ether_type	vnscommand.h	101
+ethertype	sr_utils.c	/^uint16_t ethertype(uint8_t *buf) {$/
+ethertype_arp	sr_protocol.h	158
+ethertype_ip	sr_protocol.h	159
+gw	sr_rt.h	33
+host	sr_router.h	48
+icmp_code	sr_protocol.h	84
+icmp_code	sr_protocol.h	95
+icmp_sum	sr_protocol.h	85
+icmp_sum	sr_protocol.h	96
+icmp_type	sr_protocol.h	83
+icmp_type	sr_protocol.h	94
+if_list	sr_router.h	52
+iface	sr_arpcache.h	80
+interface	sr_rt.h	35
+ip	sr_arpcache.h	86
+ip	sr_arpcache.h	92
+ip	sr_if.h	42
+ip	vnscommand.h	157
+ip_dst	sr_protocol.h	132
+ip_hl	sr_protocol.h	113
+ip_hl	sr_protocol.h	117
+ip_id	sr_protocol.h	123
+ip_len	sr_protocol.h	122
+ip_off	sr_protocol.h	124
+ip_p	sr_protocol.h	130
+ip_protocol	sr_utils.c	/^uint8_t ip_protocol(uint8_t *buf) {$/
+ip_protocol_icmp	sr_protocol.h	154
+ip_src	sr_protocol.h	132
+ip_sum	sr_protocol.h	131
+ip_tos	sr_protocol.h	121
+ip_ttl	sr_protocol.h	129
+ip_v	sr_protocol.h	114
+ip_v	sr_protocol.h	116
+len	sr_arpcache.h	79
+len	sr_dumper.h	43
+len	sr_dumper.h	63
+linktype	sr_dumper.h	36
+lock	sr_arpcache.h	105
+logfile	sr_router.h	56
+mBannerMessage	vnscommand.h	85
+mErrorMessage	vnscommand.h	60
+mHWInfo	vnscommand.h	136
+mInterfaceName	vnscommand.h	98
+mInterfaceName	vnscommand.h	109
+mKey	vnscommand.h	127
+mLen	vnscommand.h	29
+mLen	vnscommand.h	40
+mLen	vnscommand.h	58
+mLen	vnscommand.h	71
+mLen	vnscommand.h	83
+mLen	vnscommand.h	96
+mLen	vnscommand.h	107
+mLen	vnscommand.h	134
+mLen	vnscommand.h	149
+mLen	vnscommand.h	163
+mLen	vnscommand.h	173
+mLen	vnscommand.h	182
+mLen	vnscommand.h	192
+mPass	vnscommand.h	47
+mType	vnscommand.h	30
+mType	vnscommand.h	41
+mType	vnscommand.h	59
+mType	vnscommand.h	72
+mType	vnscommand.h	84
+mType	vnscommand.h	97
+mType	vnscommand.h	108
+mType	vnscommand.h	135
+mType	vnscommand.h	150
+mType	vnscommand.h	164
+mType	vnscommand.h	174
+mType	vnscommand.h	183
+mType	vnscommand.h	193
+mUID	vnscommand.h	46
+mVirtualHostID	vnscommand.h	44
+mVirtualHostID	vnscommand.h	151
+mVirtualHostID	vnscommand.h	166
+mac	sr_arpcache.h	85
+magic	sr_dumper.h	30
+mask	sr_rt.h	34
+min	sr_dumper.h	/^#define min(a,b) ( (a) < (b) ? (a) : (b) )$/
+msg	vnscommand.h	195
+name	sr_if.h	40
+next	sr_arpcache.h	81
+next	sr_arpcache.h	99
+next	sr_if.h	44
+next	sr_rt.h	36
+next_mtu	sr_protocol.h	98
+num_masked_bits	vnscommand.h	158
+packets	sr_arpcache.h	98
+pad	vnscommand.h	43
+pcap_file_header	sr_dumper.h	29
+pcap_pkthdr	sr_dumper.h	40
+pcap_sf_pkthdr	sr_dumper.h	60
+pcap_timeval	sr_dumper.h	51
+print_addr_eth	sr_utils.c	/^void print_addr_eth(uint8_t *addr) {$/
+print_addr_ip	sr_utils.c	/^void print_addr_ip(struct in_addr address) {$/
+print_addr_ip_int	sr_utils.c	/^void print_addr_ip_int(uint32_t ip) {$/
+print_hdr_arp	sr_utils.c	/^void print_hdr_arp(uint8_t *buf) {$/
+print_hdr_eth	sr_utils.c	/^void print_hdr_eth(uint8_t *buf) {$/
+print_hdr_icmp	sr_utils.c	/^void print_hdr_icmp(uint8_t *buf) {$/
+print_hdr_ip	sr_utils.c	/^void print_hdr_ip(uint8_t *buf) {$/
+print_hdrs	sr_utils.c	/^void print_hdrs(uint8_t *buf, uint32_t length) {$/
+requests	sr_arpcache.h	104
+routing_table	sr_router.h	53
+rtable	vnscommand.h	152
+salt	vnscommand.h	175
+sent	sr_arpcache.h	93
+sf_write_header	sr_dumper.c	/^sf_write_header(FILE *fp, int linktype, int thiszo/
+sigfigs	sr_dumper.h	34
+snaplen	sr_dumper.h	35
+sockfd	sr_router.h	46
+speed	sr_if.h	43
+sr	Makefile	/^sr : $(sr_OBJS)$/
+sr.purify	Makefile	/^sr.purify : $(sr_OBJS)$/
+sr_DEPS	Makefile	/^sr_DEPS = $(patsubst %.c,.%.d,$(sr_SRCS))$/
+sr_HDRS	Makefile	/^sr_HDRS = sr_arpcache.h sr_utils.h sr_dumper.h sr_/
+sr_IFACE_NAMELEN	sr_protocol.h	187
+sr_INTERFACE_H	sr_if.h	13
+sr_OBJS	Makefile	/^sr_OBJS = $(patsubst %.c,%.o,$(sr_SRCS))$/
+sr_RT_H	sr_rt.h	13
+sr_SRCS	Makefile	/^sr_SRCS = sr_router.c sr_main.c sr_if.c sr_rt.c sr/
+sr_add_interface	sr_if.c	/^void sr_add_interface(struct sr_instance* sr, cons/
+sr_add_rt_entry	sr_rt.c	/^void sr_add_rt_entry(struct sr_instance* sr, struc/
+sr_addr	sr_router.h	51
+sr_arp_hdr	sr_protocol.h	173
+sr_arp_hdr_t	sr_protocol.h	185
+sr_arp_hrd_fmt	sr_protocol.h	168
+sr_arp_opcode	sr_protocol.h	163
+sr_arp_req_not_for_us	sr_vns_comm.c	/^int  sr_arp_req_not_for_us(struct sr_instance* sr,/
+sr_arpcache	sr_arpcache.h	102
+sr_arpcache_destroy	sr_arpcache.c	/^int sr_arpcache_destroy(struct sr_arpcache *cache)/
+sr_arpcache_dump	sr_arpcache.c	/^void sr_arpcache_dump(struct sr_arpcache *cache) {/
+sr_arpcache_init	sr_arpcache.c	/^int sr_arpcache_init(struct sr_arpcache *cache) { /
+sr_arpcache_insert	sr_arpcache.c	/^struct sr_arpreq *sr_arpcache_insert(struct sr_arp/
+sr_arpcache_lookup	sr_arpcache.c	/^struct sr_arpentry *sr_arpcache_lookup(struct sr_a/
+sr_arpcache_queuereq	sr_arpcache.c	/^struct sr_arpreq *sr_arpcache_queuereq(struct sr_a/
+sr_arpcache_sweepreqs	sr_arpcache.c	/^void sr_arpcache_sweepreqs(struct sr_instance *sr)/
+sr_arpcache_timeout	sr_arpcache.c	/^void *sr_arpcache_timeout(void *sr_ptr) {$/
+sr_arpentry	sr_arpcache.h	84
+sr_arpreq	sr_arpcache.h	91
+sr_arpreq_destroy	sr_arpcache.c	/^void sr_arpreq_destroy(struct sr_arpcache *cache, /
+sr_connect_to_server	sr_vns_comm.c	/^int sr_connect_to_server(struct sr_instance* sr,un/
+sr_destroy_instance	sr_main.c	/^static void sr_destroy_instance(struct sr_instance/
+sr_dump	sr_dumper.c	/^sr_dump(FILE *fp, const struct pcap_pkthdr *h, con/
+sr_dump_close	sr_dumper.c	/^sr_dump_close(FILE *fp)$/
+sr_dump_open	sr_dumper.c	/^sr_dump_open(const char *fname, int thiszone, int /
+sr_ether_addrs_match_interface	sr_vns_comm.c	/^sr_ether_addrs_match_interface( struct sr_instance/
+sr_ethernet_hdr	sr_protocol.h	140
+sr_ethernet_hdr_t	sr_protocol.h	149
+sr_ethertype	sr_protocol.h	157
+sr_get_interface	sr_if.c	/^struct sr_if* sr_get_interface(struct sr_instance*/
+sr_handle_auth_request	sr_vns_comm.c	/^int sr_handle_auth_request(struct sr_instance* sr,/
+sr_handle_auth_status	sr_vns_comm.c	/^int sr_handle_auth_status(struct sr_instance* sr, /
+sr_handle_hwinfo	sr_vns_comm.c	/^int sr_handle_hwinfo(struct sr_instance* sr, c_hwi/
+sr_handle_rtable	sr_vns_comm.c	/^int sr_handle_rtable(struct sr_instance* sr, c_rta/
+sr_handlepacket	sr_router.c	/^void sr_handlepacket(struct sr_instance* sr,$/
+sr_icmp_hdr	sr_protocol.h	82
+sr_icmp_hdr_t	sr_protocol.h	88
+sr_icmp_t3_hdr	sr_protocol.h	93
+sr_icmp_t3_hdr_t	sr_protocol.h	102
+sr_if	sr_if.h	38
+sr_init	sr_router.c	/^void sr_init(struct sr_instance* sr)$/
+sr_init_instance	sr_main.c	/^static void sr_init_instance(struct sr_instance* s/
+sr_instance	sr_router.h	44
+sr_ip_hdr	sr_protocol.h	110
+sr_ip_hdr_t	sr_protocol.h	134
+sr_ip_protocol	sr_protocol.h	153
+sr_load_rt	sr_rt.c	/^int sr_load_rt(struct sr_instance* sr,const char* /
+sr_load_rt_wrap	sr_main.c	/^static void sr_load_rt_wrap(struct sr_instance* sr/
+sr_log_packet	sr_vns_comm.c	/^void sr_log_packet(struct sr_instance* sr, uint8_t/
+sr_packet	sr_arpcache.h	77
+sr_print_if	sr_if.c	/^void sr_print_if(struct sr_if* iface)$/
+sr_print_if_list	sr_if.c	/^void sr_print_if_list(struct sr_instance* sr)$/
+sr_print_routing_entry	sr_rt.c	/^void sr_print_routing_entry(struct sr_rt* entry)$/
+sr_print_routing_table	sr_rt.c	/^void sr_print_routing_table(struct sr_instance* sr/
+sr_read_from_server	sr_vns_comm.c	/^int sr_read_from_server(struct sr_instance* sr \/* /
+sr_read_from_server_expect	sr_vns_comm.c	/^int sr_read_from_server_expect(struct sr_instance*/
+sr_rt	sr_rt.h	30
+sr_send_packet	sr_vns_comm.c	/^int sr_send_packet(struct sr_instance* sr \/* borro/
+sr_session_closed_help	sr_vns_comm.c	/^static void sr_session_closed_help()$/
+sr_set_ether_addr	sr_if.c	/^void sr_set_ether_addr(struct sr_instance* sr, con/
+sr_set_ether_ip	sr_if.c	/^void sr_set_ether_ip(struct sr_instance* sr, uint3/
+sr_set_user	sr_main.c	/^void sr_set_user(struct sr_instance* sr)$/
+sr_verify_routing_table	sr_main.c	/^int sr_verify_routing_table(struct sr_instance* sr/
+srcFilters	vnscommand.h	167
+submit	Makefile	/^submit:$/
+tags	Makefile	/^tags:$/
+templateName	vnscommand.h	165
+thiszone	sr_dumper.h	33
+times_sent	sr_arpcache.h	96
+topoID	vnscommand.h	42
+topo_id	sr_router.h	50
+ts	sr_dumper.h	41
+ts	sr_dumper.h	61
+tv_sec	sr_dumper.h	52
+tv_usec	sr_dumper.h	53
+uAUPNCf	auth_key	1
+unused	sr_protocol.h	97
+usage	sr_main.c	/^static void usage(char* argv0)$/
+user	sr_router.h	47
+username	vnscommand.h	185
+usernameLen	vnscommand.h	184
+valid	sr_arpcache.h	88
+value	vnscommand.h	128
+version_major	sr_dumper.h	31
+version_minor	sr_dumper.h	32
+x0001	sr_protocol.h	154
+x0001	sr_protocol.h	164
+x0001	sr_protocol.h	169
+x0002	sr_protocol.h	165
+x0800	sr_protocol.h	159
+x0806	sr_protocol.h	158
